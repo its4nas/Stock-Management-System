@@ -1,0 +1,16 @@
+C:\Users\96777\source\repos\web service\web service\bin\Debug\web service.exe.config
+C:\Users\96777\source\repos\web service\web service\bin\Debug\web service.exe
+C:\Users\96777\source\repos\web service\web service\bin\Debug\web service.pdb
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web service.csproj.AssemblyReference.cache
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web service.csproj.SuggestedBindingRedirects.cache
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.Form1.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.Properties.Resources.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web service.csproj.GenerateResource.cache
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web service.csproj.CoreCompileInputs.cache
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web service.exe
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web service.pdb
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.Form2.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.UserForm.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.AddUserForm.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.DeleteUserForm.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.UpdateUserForm.resources
