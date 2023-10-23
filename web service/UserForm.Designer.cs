@@ -29,18 +29,23 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.add_button = new System.Windows.Forms.Button();
             this.delete_button = new System.Windows.Forms.Button();
             this.update_button = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.add_button = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.showallusers = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.showallusers);
             this.panel1.Controls.Add(this.add_button);
             this.panel1.Controls.Add(this.delete_button);
             this.panel1.Controls.Add(this.update_button);
@@ -49,6 +54,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 622);
             this.panel1.TabIndex = 0;
+            // 
+            // add_button
+            // 
+            this.add_button.BackColor = System.Drawing.SystemColors.Info;
+            this.add_button.Location = new System.Drawing.Point(20, 48);
+            this.add_button.Name = "add_button";
+            this.add_button.Size = new System.Drawing.Size(154, 66);
+            this.add_button.TabIndex = 3;
+            this.add_button.Text = "Create User";
+            this.add_button.UseVisualStyleBackColor = false;
+            this.add_button.Click += new System.EventHandler(this.add_button_Click);
             // 
             // delete_button
             // 
@@ -83,22 +99,34 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 427);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(996, 195);
             this.panel3.TabIndex = 0;
             // 
-            // add_button
+            // dataGridView1
             // 
-            this.add_button.BackColor = System.Drawing.SystemColors.Info;
-            this.add_button.Location = new System.Drawing.Point(20, 48);
-            this.add_button.Name = "add_button";
-            this.add_button.Size = new System.Drawing.Size(154, 66);
-            this.add_button.TabIndex = 3;
-            this.add_button.Text = "Create User";
-            this.add_button.UseVisualStyleBackColor = false;
-            this.add_button.Click += new System.EventHandler(this.add_button_Click);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(990, 150);
+            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // showallusers
+            // 
+            this.showallusers.BackColor = System.Drawing.SystemColors.Info;
+            this.showallusers.Location = new System.Drawing.Point(20, 461);
+            this.showallusers.Name = "showallusers";
+            this.showallusers.Size = new System.Drawing.Size(154, 67);
+            this.showallusers.TabIndex = 4;
+            this.showallusers.Text = "show all users";
+            this.showallusers.UseVisualStyleBackColor = false;
+            this.showallusers.Click += new System.EventHandler(this.showallusers_Click_1);
             // 
             // UserForm
             // 
@@ -111,6 +139,8 @@
             this.Text = "UserForm";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -123,5 +153,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button add_button;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button showallusers;
     }
 }

@@ -16,7 +16,7 @@ namespace web_service
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DeleteUserForm());
+            Application.Run(new Form2());
         }
     }
 }

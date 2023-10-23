@@ -41,6 +41,7 @@
             this.user_input.Name = "user_input";
             this.user_input.Size = new System.Drawing.Size(201, 22);
             this.user_input.TabIndex = 7;
+            this.user_input.TextChanged += new System.EventHandler(this.user_input_TextChanged);
             // 
             // password_input
             // 
@@ -48,6 +49,7 @@
             this.password_input.Name = "password_input";
             this.password_input.Size = new System.Drawing.Size(201, 22);
             this.password_input.TabIndex = 8;
+            this.password_input.TextChanged += new System.EventHandler(this.password_input_TextChanged);
             // 
             // password
             // 
@@ -57,6 +59,7 @@
             this.password.Size = new System.Drawing.Size(67, 16);
             this.password.TabIndex = 5;
             this.password.Text = "Password";
+            this.password.Click += new System.EventHandler(this.password_Click);
             // 
             // username
             // 
@@ -66,6 +69,7 @@
             this.username.Size = new System.Drawing.Size(70, 16);
             this.username.TabIndex = 6;
             this.username.Text = "Username";
+            this.username.Click += new System.EventHandler(this.username_Click);
             // 
             // add_user
             // 

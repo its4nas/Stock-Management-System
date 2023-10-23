@@ -59,5 +59,10 @@ namespace web_service
             string data = "updateuser='' &old_name='" + old_user_input.Text +"'&name='" + user_input.Text + "'&password='" + password_input.Text + "'";
             webservices(data);
         }
+
+        private void user_input_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

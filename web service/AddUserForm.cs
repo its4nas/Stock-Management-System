@@ -49,5 +49,25 @@ namespace web_service
             string data = "adduser='' & name='" + user_input.Text + "'&password='" + password_input.Text + "'";
             webservices(data);
         }
+
+        private void password_input_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void password_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void username_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void user_input_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,10 +45,21 @@ namespace web_service
             MessageBox.Show(sr.ReadToEnd());
         }
 
+
         private void delete_user_Click(object sender, EventArgs e)
         {
             string data = "deleteuser='' &old_name='" + old_user_input.Text + "'";
             webservices(data);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void old_user_input_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

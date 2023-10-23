@@ -14,3 +14,9 @@ C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.UserFo
 C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.AddUserForm.resources
 C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.DeleteUserForm.resources
 C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.UpdateUserForm.resources
+C:\Users\96777\source\repos\web service\web service\bin\Debug\Newtonsoft.Json.dll
+C:\Users\96777\source\repos\web service\web service\bin\Debug\Newtonsoft.Json.xml
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web service.csproj.CopyComplete
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.ItemForm.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.AddItemForm.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.DeleteItemForm.resources
