@@ -29,21 +29,57 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.transaction = new System.Windows.Forms.Button();
+            this.stocks = new System.Windows.Forms.Button();
+            this.items = new System.Windows.Forms.Button();
             this.users = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.items = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.transaction);
+            this.panel1.Controls.Add(this.stocks);
             this.panel1.Controls.Add(this.items);
             this.panel1.Controls.Add(this.users);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1058, 0);
+            this.panel1.Location = new System.Drawing.Point(1070, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 654);
             this.panel1.TabIndex = 0;
+            // 
+            // transaction
+            // 
+            this.transaction.Location = new System.Drawing.Point(24, 423);
+            this.transaction.Name = "transaction";
+            this.transaction.Size = new System.Drawing.Size(164, 75);
+            this.transaction.TabIndex = 3;
+            this.transaction.Text = "Transactions";
+            this.transaction.UseVisualStyleBackColor = true;
+            this.transaction.Click += new System.EventHandler(this.transaction_Click);
+            // 
+            // stocks
+            // 
+            this.stocks.Location = new System.Drawing.Point(24, 301);
+            this.stocks.Name = "stocks";
+            this.stocks.Size = new System.Drawing.Size(164, 75);
+            this.stocks.TabIndex = 2;
+            this.stocks.Text = "Stocks";
+            this.stocks.UseVisualStyleBackColor = true;
+            this.stocks.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // items
+            // 
+            this.items.Location = new System.Drawing.Point(24, 174);
+            this.items.Name = "items";
+            this.items.Size = new System.Drawing.Size(164, 75);
+            this.items.TabIndex = 1;
+            this.items.Text = "Items";
+            this.items.UseVisualStyleBackColor = true;
+            this.items.Click += new System.EventHandler(this.items_Click);
             // 
             // users
             // 
@@ -60,24 +96,24 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1058, 654);
+            this.panel2.Size = new System.Drawing.Size(1070, 654);
             this.panel2.TabIndex = 1;
             // 
-            // items
+            // button1
             // 
-            this.items.Location = new System.Drawing.Point(24, 174);
-            this.items.Name = "items";
-            this.items.Size = new System.Drawing.Size(164, 75);
-            this.items.TabIndex = 1;
-            this.items.Text = "Items";
-            this.items.UseVisualStyleBackColor = true;
-            this.items.Click += new System.EventHandler(this.items_Click);
+            this.button1.Location = new System.Drawing.Point(24, 532);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(164, 75);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Transactions";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1258, 654);
+            this.ClientSize = new System.Drawing.Size(1270, 654);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form2";
@@ -93,5 +129,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button users;
         private System.Windows.Forms.Button items;
+        private System.Windows.Forms.Button stocks;
+        private System.Windows.Forms.Button transaction;
+        private System.Windows.Forms.Button button1;
     }
 }

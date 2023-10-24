@@ -9,6 +9,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using web_service.Item_Form;
 
 namespace web_service
 {
@@ -63,12 +64,12 @@ namespace web_service
 
         private void update_button_Click(object sender, EventArgs e)
         {
-            UpdateUserForm u = new UpdateUserForm();
-            u.TopLevel = false; // Set TopLevel property to false
+            UpdateItemForm i = new UpdateItemForm();
+            i.TopLevel = false; // Set TopLevel property to false
             panel2.Controls.Clear(); // Clear any existing controls in panel2
-            panel2.Controls.Add(u); // Add UserForm to panel2's Controls collection
-            u.Dock = DockStyle.Fill; // Dock UserForm within panel2
-            u.Show();
+            panel2.Controls.Add(i); // Add UserForm to panel2's Controls collection
+            i.Dock = DockStyle.Fill; // Dock UserForm within panel2
+            i.Show();
         }
 
         private void delete_button_Click(object sender, EventArgs e)
@@ -127,6 +128,11 @@ namespace web_service
         private void showallusers_Click_1(object sender, EventArgs e)
         {
             webservices_items("showallitems=''");
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

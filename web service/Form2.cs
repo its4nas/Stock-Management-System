@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using web_service.Stocks_Form;
+using web_service.Transaction_Form;
 
 namespace web_service
 {
@@ -14,6 +16,9 @@ namespace web_service
     {
         private UserForm u;
         private ItemForm i;
+        private StocksForm s;
+        private TransactionForm t;
+        private TForm v;
 
         public Form2()
         {
@@ -39,6 +44,37 @@ namespace web_service
             i.Dock = DockStyle.Fill; // Dock UserForm within panel2
             i.Show(); // Show UserForm
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            s = new StocksForm();
+            s.TopLevel = false; // Set TopLevel property to false
+            panel2.Controls.Clear(); // Clear any existing controls in panel2
+            panel2.Controls.Add(s); // Add UserForm to panel2's Controls collection
+            s.Dock = DockStyle.Fill; // Dock UserForm within panel2
+            s.Show(); // Show UserForm
+
+        }
+
+        private void transaction_Click(object sender, EventArgs e)
+        {
+            t = new TransactionForm();
+            t.TopLevel = false; // Set TopLevel property to false
+            panel2.Controls.Clear(); // Clear any existing controls in panel2
+            panel2.Controls.Add(t); // Add UserForm to panel2's Controls collection
+            t.Dock = DockStyle.Fill; // Dock UserForm within panel2
+            t.Show(); // Show UserForm
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            v = new TForm();
+            v.TopLevel = false; // Set TopLevel property to false
+            panel2.Controls.Clear(); // Clear any existing controls in panel2
+            panel2.Controls.Add(v); // Add UserForm to panel2's Controls collection
+            v.Dock = DockStyle.Fill; // Dock UserForm within panel2
+            v.Show();
         }
     }
 }

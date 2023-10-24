@@ -33,65 +33,65 @@ namespace web_service
         }
 
         string url = "http://localhost:8080/programming_adv/index.php";
-        //void webservices(string data)
-        //{
-
-        //    WebRequest RE = WebRequest.Create(url);
-        //    RE.Method = "post";
-        //    RE.ContentType = "application/x-www-form-urlencoded";
-        //    Stream st = RE.GetRequestStream();
-        //    Byte[] bt = Encoding.UTF8.GetBytes(data);
-        //    st.Write(bt, 0, bt.Length);
-
-        //    WebResponse res = RE.GetResponse();
-        //    st = res.GetResponseStream();
-        //    StreamReader str = new StreamReader(st);
-
-        //    List<Users> user_info = new List<Users>();
-        //    foreach (string row in str.ReadToEnd().Split('#'))
-        //    {
-        //        try
-        //        {
-        //            user_info.Add(new Users(row.Split(',')[0], row.Split(',')[1], row.Split(',')[2]));
-        //        }
-        //        catch { }
-        //    }
-        //    dataGridView1.DataSource = user_info;
-        //}
-
         void webservices(string data)
         {
-            WebRequest RE = WebRequest.Create("http://localhost:8080/programming_adv/index.php");
+
+            WebRequest RE = WebRequest.Create(url);
             RE.Method = "post";
             RE.ContentType = "application/x-www-form-urlencoded";
             Stream st = RE.GetRequestStream();
-
             Byte[] bt = Encoding.UTF8.GetBytes(data);
             st.Write(bt, 0, bt.Length);
 
             WebResponse res = RE.GetResponse();
             st = res.GetResponseStream();
+            StreamReader str = new StreamReader(st);
 
-            StreamReader sr = new StreamReader(st);
-
-            string jsonResponse = sr.ReadToEnd();
-
-            // Parse the JSON response
             List<Users> user_info = new List<Users>();
-            try
+            foreach (string row in str.ReadToEnd().Split('#'))
             {
-                dynamic responseObject = JsonConvert.DeserializeObject(jsonResponse);
-                foreach (dynamic item in responseObject)
+                try
                 {
-                    string id = item.id.ToString();
-                    string name = item.name.ToString();
-                    user_info.Add(new Users(id, name, ""));
+                    user_info.Add(new Users(row.Split(',')[0], row.Split(',')[1], row.Split(',')[2]));
                 }
+                catch { }
             }
-            catch { }
-
             dataGridView1.DataSource = user_info;
         }
+
+        //void webservices(string data)
+        //{
+        //    WebRequest RE = WebRequest.Create("http://localhost:8080/programming_adv/index.php");
+        //    RE.Method = "post";
+        //    RE.ContentType = "application/x-www-form-urlencoded";
+        //    Stream st = RE.GetRequestStream();
+
+        //    Byte[] bt = Encoding.UTF8.GetBytes(data);
+        //    st.Write(bt, 0, bt.Length);
+
+        //    WebResponse res = RE.GetResponse();
+        //    st = res.GetResponseStream();
+
+        //    StreamReader sr = new StreamReader(st);
+
+        //    string jsonResponse = sr.ReadToEnd();
+
+        //    // Parse the JSON response
+        //    List<Users> user_info = new List<Users>();
+        //    try
+        //    {
+        //        dynamic responseObject = JsonConvert.DeserializeObject(jsonResponse);
+        //        foreach (dynamic item in responseObject)
+        //        {
+        //            string id = item.id.ToString();
+        //            string name = item.name.ToString();
+        //            user_info.Add(new Users(id, name, ""));
+        //        }
+        //    }
+        //    catch { }
+
+        //    dataGridView1.DataSource = user_info;
+        //}
 
         private void update_button_Click(object sender, EventArgs e)
         {

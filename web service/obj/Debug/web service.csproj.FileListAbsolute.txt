@@ -20,3 +20,10 @@ C:\Users\96777\source\repos\web service\web service\obj\Debug\web service.csproj
 C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.ItemForm.resources
 C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.AddItemForm.resources
 C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.DeleteItemForm.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.Item_Form.UpdateItemForm.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.Stocks_Form.AddStocksForm.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.StocksForm.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.Stocks_Form.DeleteStocksForm.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.Stocks_Form.UpdateStocksForm.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.Transaction_Form.TransactionForm.resources
+C:\Users\96777\source\repos\web service\web service\obj\Debug\web_service.Transaction_Form.TForm.resources

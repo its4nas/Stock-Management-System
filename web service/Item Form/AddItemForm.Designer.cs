@@ -91,6 +91,7 @@
             this.Controls.Add(this.add_user);
             this.Name = "AddItemForm";
             this.Text = "AddItemForm";
+            this.Load += new System.EventHandler(this.AddItemForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,18 +10,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace web_service
+namespace web_service.Stocks_Form
 {
-    public partial class AddItemForm : Form
+    public partial class DeleteStocksForm : Form
     {
-        public AddItemForm()
+        public DeleteStocksForm()
         {
             InitializeComponent();
-        }
-
-        private void username_Click(object sender, EventArgs e)
-        {
-
         }
         void webservices(String data)
         {
@@ -42,10 +37,10 @@ namespace web_service
             //Application.Run(new Form2());
             MessageBox.Show(sr.ReadToEnd());
         }
-
-        private void add_user_Click(object sender, EventArgs e)
+        private void delete_stock_Click(object sender, EventArgs e)
         {
-            string data = "additem='' & name='" + item_input.Text + "'";
+
+            string data = "deletestock='' &old_name='" + Stock_input.Text + "'";
             webservices(data);
         }
     }

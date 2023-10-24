@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.showallusers = new System.Windows.Forms.Button();
             this.add_button = new System.Windows.Forms.Button();
             this.delete_button = new System.Windows.Forms.Button();
             this.update_button = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.showallusers = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -54,6 +54,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 622);
             this.panel1.TabIndex = 0;
+            // 
+            // showallusers
+            // 
+            this.showallusers.BackColor = System.Drawing.SystemColors.Info;
+            this.showallusers.Location = new System.Drawing.Point(20, 461);
+            this.showallusers.Name = "showallusers";
+            this.showallusers.Size = new System.Drawing.Size(154, 67);
+            this.showallusers.TabIndex = 4;
+            this.showallusers.Text = "show all items";
+            this.showallusers.UseVisualStyleBackColor = false;
+            this.showallusers.Click += new System.EventHandler(this.showallusers_Click_1);
             // 
             // add_button
             // 
@@ -96,6 +107,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(996, 622);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel3
             // 
@@ -117,18 +129,7 @@
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // showallusers
-            // 
-            this.showallusers.BackColor = System.Drawing.SystemColors.Info;
-            this.showallusers.Location = new System.Drawing.Point(20, 461);
-            this.showallusers.Name = "showallitems";
-            this.showallusers.Size = new System.Drawing.Size(154, 67);
-            this.showallusers.TabIndex = 4;
-            this.showallusers.Text = "show all items";
-            this.showallusers.UseVisualStyleBackColor = false;
-            this.showallusers.Click += new System.EventHandler(this.showallusers_Click_1);
-            // 
-            // UserForm
+            // ItemForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
